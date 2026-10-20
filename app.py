@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import socket
 import getpass
 
+
 hostname = socket.gethostname()
 
 app = Flask(__name__)
@@ -37,3 +38,4 @@ if __name__ == "__main__":
     # host="0.0.0.0" macht den Server für das gesamte Netzwerk erreichbar
     # port=5000 legt den Port fest (kannst du auch ändern, z.B. 80)
     app.run(host="0.0.0.0", port=5000, debug=True)
+
